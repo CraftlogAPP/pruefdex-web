@@ -1,45 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>PrüfDex – DGUV V3 Prüf-App</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PrüfDex — DGUV-V3-Prüfungen mobil dokumentieren</title>
+  <meta name="description" content="PrüfDex: Prüfung ortsveränderlicher elektrischer Betriebsmittel nach DGUV V3 / VDE 0701-0702 — Geräte, Messwerte, Protokolle, Plaketten und Fristen. Mobil, prüffest." />
+  <meta name="theme-color" content="#0B1220" />
+  <meta property="og:title" content="PrüfDex" />
+  <meta property="og:description" content="Prüfen. Protokollieren. Fertig." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root {
+      --bg: #0B1220; --surface: #131C2E; --border: #27334A;
+      --text: #E7ECF3; --muted: #9AA7BD; --blue: #2563EB;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 0 24px; }
+    header { padding: 28px 0; display: flex; align-items: center; gap: 12px; }
+    .logo { width: 40px; height: 40px; background: var(--blue); border-radius: 10px; display: grid; place-items: center; }
+    .brand { font-size: 20px; font-weight: 700; letter-spacing: -0.3px; }
+    .hero { padding: 64px 0 48px; text-align: center; }
+    .hero h1 { font-size: clamp(34px, 6vw, 56px); font-weight: 800; letter-spacing: -1px; line-height: 1.1; }
+    .hero .claim { color: var(--blue); font-weight: 700; font-size: clamp(18px, 3vw, 24px); margin-top: 14px; }
+    .hero p { color: var(--muted); font-size: 18px; max-width: 640px; margin: 18px auto 0; }
+    .cta { margin-top: 32px; display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    .btn { background: var(--blue); color: #fff; text-decoration: none; font-weight: 600; padding: 14px 26px; border-radius: 12px; display: inline-block; }
+    .btn.ghost { background: transparent; border: 1px solid var(--border); color: var(--text); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; padding: 32px 0 16px; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 22px; }
+    .card h3 { font-size: 17px; margin-bottom: 8px; }
+    .card p { color: var(--muted); font-size: 14px; }
+    .note { text-align: center; color: var(--muted); font-size: 13px; padding: 28px 0; }
+    .legal { color: var(--muted); font-size: 12px; line-height: 1.7; border-top: 1px solid var(--border); padding: 28px 0 48px; }
+    .legal a { color: var(--muted); }
+    .big-mark { width: 96px; height: 96px; background: var(--blue); border-radius: 22px; display: grid; place-items: center; margin: 0 auto 28px; }
+  </style>
 </head>
 <body>
-<header>
   <div class="wrap">
-    <div class="brand">PrüfDex</div>
-    <div class="tag">DGUV V3 Prüf-App für Elektrofachkräfte</div>
-  </div>
-</header>
-<div class="wrap">
-  <h1>Prüfungen dokumentieren – ohne Papierchaos</h1>
-  <p class="muted">PrüfDex begleitet die Prüfung ortsveränderlicher elektrischer Betriebsmittel nach DGUV Vorschrift 3 / VDE 0701-0702 – vom Gerät über die Prüfung bis zum fertigen Protokoll und der Plakette.</p>
+    <header>
+      <span class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 12.5l4 4 10-10" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="brand">PrüfDex</span>
+    </header>
 
-  <div class="card">
-    <h2 style="margin-top:0">Was die App kann</h2>
-    <ul>
-      <li>Geräte verwalten – Hersteller, Typ, Schutzklasse, Standort, Intervall</li>
-      <li>Geführte Prüfung mit Sichtprüfung und Messwerten</li>
-      <li>Prüfprotokolle als PDF teilen oder drucken</li>
-      <li>Prüfplaketten mit QR-Code erstellen</li>
-      <li>QR-Codes scannen und Prüfhistorie ansehen</li>
-      <li>Fristen im Blick – nach Kunde gruppiert</li>
-      <li>Kunden/Mandanten verwalten und Sammel-Protokoll erstellen</li>
-    </ul>
-  </div>
+    <section class="hero">
+      <div class="big-mark">
+        <svg width="56" height="56" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 12.5l4 4 10-10" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h1>Prüfen. Protokollieren.<br/>Fertig.</h1>
+      <div class="claim">Rechtssicher. Prüffest. In Minuten.</div>
+      <p>
+        PrüfDex begleitet die Prüfung ortsveränderlicher elektrischer Betriebsmittel
+        nach DGUV Vorschrift 3 / VDE 0701-0702 — vom Gerät über die Messwerte bis zum
+        fertigen Protokoll und der Plakette. Mobil, ohne Papierchaos.
+      </p>
+      <div class="cta">
+        <a class="btn" href="#kontakt">Beta-Zugang anfragen</a>
+        <a class="btn ghost" href="#features">Mehr erfahren</a>
+      </div>
+    </section>
 
-  <h2>Rechtliches</h2>
-  <div class="card">
-    <p style="margin-top:0"><a href="datenschutz.html">Datenschutzerklärung</a></p>
-    <p><a href="nutzungsbedingungen.html">Nutzungsbedingungen (AGB)</a></p>
-    <p style="margin-bottom:0"><a href="konto-loeschung.html">Konto &amp; Daten löschen</a></p>
-  </div>
+    <section class="grid" id="features">
+      <div class="card">
+        <h3>Geräte &amp; Fristen</h3>
+        <p>Alle Betriebsmittel mit Schutzklasse, Standort und Intervall — Fristen nach Kunde gruppiert.</p>
+      </div>
+      <div class="card">
+        <h3>Geführte Prüfung</h3>
+        <p>Sichtprüfung und Messwerte (Schutzleiter, Isolation, Ableitstrom) mit Grenzwert-Hinweisen.</p>
+      </div>
+      <div class="card">
+        <h3>Protokoll &amp; Plakette</h3>
+        <p>Prüffestes Protokoll als PDF und Plakette mit QR-Code — auf Knopfdruck.</p>
+      </div>
+      <div class="card">
+        <h3>QR-Scan &amp; Historie</h3>
+        <p>Gerät scannen, Prüfhistorie sehen, neue Prüfung starten. Mängel werden klar markiert.</p>
+      </div>
+    </section>
 
-  <footer>
-    PrüfDex · Stand: Juni 2026 · Kontakt: <a href="mailto:alexpfalz.installateurpfalz@gmail.com">alexpfalz.installateurpfalz@gmail.com</a>
-  </footer>
-</div>
+    <p class="note" id="kontakt">
+      Bald verfügbar für Android &amp; iOS. Schreib uns für den Beta-Zugang:
+      <a href="mailto:2easy4trash@gmail.com" style="color:#8FB4FF">2easy4trash@gmail.com</a>
+    </p>
+
+    <h2 style="text-align:center;margin-top:24px;font-size:22px;font-weight:800;letter-spacing:-0.3px;">Mehr von uns</h2>
+    <p class="note" style="padding:6px 0 8px;">Weitere Apps für deinen Betrieb.</p>
+    <section class="grid">
+      <div class="card">
+        <h3>Schutzheld</h3>
+        <p>Arbeitsschutz-Unterweisung &amp; Gefährdungsbeurteilung — prüffest.</p>
+        <p class="note" style="padding:6px 0 0;">Bald verfügbar.</p>
+      </div>
+      <div class="card">
+        <h3>CraftLog</h3>
+        <p>Die App für Handwerksbetriebe.</p>
+        <p class="note" style="padding:6px 0 0;">Bald verfügbar.</p>
+      </div>
+      <div class="card">
+        <h3>Archio</h3>
+        <p>Dokumente sicher archivieren.</p>
+        <p class="note" style="padding:6px 0 0;">Bald verfügbar.</p>
+      </div>
+    </section>
+
+    <footer class="legal">
+      © <span id="y"></span> PrüfDex. Die App ist ein Dokumentations-Hilfsmittel; die fachgerechte
+      Prüfung und Bewertung obliegt der verantwortlichen Elektrofachkraft.
+      · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>
+      · <a href="nutzungsbedingungen.html">AGB</a> · <a href="konto-loeschung.html">Konto löschen</a>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>

@@ -1,67 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Nutzungsbedingungen (AGB) – PrüfDex</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nutzungsbedingungen (AGB) — PrüfDex</title>
+  <meta name="robots" content="all" />
+  <meta name="theme-color" content="#0B1220" />
+  <style>
+    :root {
+      --bg: #0B1220; --surface: #131C2E; --border: #27334A;
+      --text: #E7ECF3; --muted: #9AA7BD; --blue: #2563EB;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px 64px; }
+    header { padding: 28px 0; display: flex; align-items: center; gap: 12px; }
+    .logo { width: 36px; height: 36px; background: var(--blue); border-radius: 9px; display: grid; place-items: center; }
+    .brand { font-size: 18px; font-weight: 700; letter-spacing: -0.3px; }
+    a { color: #8FB4FF; }
+    h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.5px; margin: 18px 0 6px; }
+    h2 { font-size: 19px; font-weight: 700; margin: 30px 0 8px; }
+    p, li { color: var(--text); font-size: 15px; margin-bottom: 8px; }
+    ul { padding-left: 22px; }
+    .muted { color: var(--muted); font-size: 13px; }
+    .note { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; margin: 16px 0; font-size: 14px; color: var(--muted); }
+    .back { display: inline-block; margin-top: 32px; }
+  </style>
 </head>
 <body>
-<header>
   <div class="wrap">
-    <div class="brand">PrüfDex</div>
-    <div class="tag">Nutzungsbedingungen (AGB)</div>
+    <header>
+      <span class="logo">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 12.5l4 4 10-10" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="brand">PrüfDex</span>
+    </header>
+
+    <h1>Nutzungsbedingungen</h1>
+    <p class="muted">Stand: 27.06.2026 · Gilt für die App „PrüfDex".</p>
+
+    <div class="note">
+      Hinweis: Entwurf — vor Veröffentlichung rechtlich prüfen lassen.
+    </div>
+
+    <h2>1. Geltungsbereich</h2>
+    <p>Diese Bedingungen gelten zwischen dem Anbieter der App (siehe <a href="impressum.html">Impressum</a>) und der Person oder dem Betrieb, der die App nutzt („Nutzer"). Mit der Nutzung der App erkennt der Nutzer diese Bedingungen an.</p>
+
+    <h2>2. Leistungsbeschreibung</h2>
+    <p>Die App ist ein digitales Hilfsmittel zur Erfassung, Verwaltung und Dokumentation von Geräten, Prüfungen, Messwerten und Fristen sowie zur Erstellung von Prüfprotokollen und Prüfplaketten.</p>
+    <p><strong>Wichtig:</strong> Die App stellt keine Rechts-, Sicherheits- oder Sachverständigenberatung dar. Die fachgerechte Durchführung und Bewertung der Prüfung sowie die Einhaltung aller gesetzlichen und normativen Vorgaben obliegt allein der verantwortlichen Elektrofachkraft. Die App ersetzt nicht die erforderliche Qualifikation, Mess- und Prüftechnik oder fachliche Beurteilung.</p>
+
+    <h2>3. Konto und Registrierung</h2>
+    <p>Für die Cloud-Funktionen ist ein Konto erforderlich. Der Nutzer ist für die Geheimhaltung seiner Zugangsdaten sowie für die Richtigkeit der von ihm eingegebenen Daten verantwortlich.</p>
+
+    <h2>4. Pflichten des Nutzers</h2>
+    <ul>
+      <li>Die App ist bestimmungsgemäß und im Rahmen der geltenden Gesetze zu nutzen.</li>
+      <li>Der Nutzer stellt sicher, dass er zur Verarbeitung der von ihm eingegebenen Daten (z. B. Kundendaten) berechtigt ist.</li>
+      <li>Eine missbräuchliche Nutzung, Manipulation oder Beeinträchtigung der App ist untersagt.</li>
+    </ul>
+
+    <h2>5. Kosten</h2>
+    <p>Die App ist in ihrem Grundumfang kostenlos nutzbar. Kostenpflichtige Zusatzfunktionen können künftig angeboten und ausschließlich über die Bezahlfunktion des jeweiligen App-Stores abgewickelt werden. Auf etwaige Kosten wird vor Abschluss deutlich hingewiesen.</p>
+
+    <h2>6. Verfügbarkeit</h2>
+    <p>Der Anbieter bemüht sich um eine hohe Verfügbarkeit, übernimmt jedoch keine Gewähr für eine ununterbrochene Erreichbarkeit. Wartungsarbeiten, Störungen oder höhere Gewalt können die Nutzung vorübergehend einschränken.</p>
+
+    <h2>7. Haftung</h2>
+    <p>Der Anbieter haftet unbeschränkt bei Vorsatz und grober Fahrlässigkeit sowie bei der Verletzung von Leben, Körper oder Gesundheit. Bei leicht fahrlässiger Verletzung wesentlicher Vertragspflichten ist die Haftung auf den vorhersehbaren, vertragstypischen Schaden begrenzt. Im Übrigen ist die Haftung ausgeschlossen.</p>
+    <p>Insbesondere übernimmt der Anbieter keine Haftung für die inhaltliche Richtigkeit, Vollständigkeit oder rechtliche Wirksamkeit der vom Nutzer erstellten Prüfprotokolle oder für Folgen einer unsachgemäßen Prüfung. Der Nutzer ist für regelmäßige Sicherungen seiner Daten selbst verantwortlich.</p>
+
+    <h2>8. Datenschutz</h2>
+    <p>Informationen zur Verarbeitung personenbezogener Daten finden Sie in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+
+    <h2>9. Laufzeit und Löschung</h2>
+    <p>Der Nutzer kann die Nutzung jederzeit beenden und die Löschung seines Kontos beantragen. Einzelheiten unter <a href="konto-loeschung.html">Konto &amp; Daten löschen</a>.</p>
+
+    <h2>10. Änderungen der Bedingungen</h2>
+    <p>Der Anbieter kann diese Bedingungen anpassen, soweit dies sachlich gerechtfertigt ist. Es gilt die jeweils auf dieser Seite veröffentlichte Fassung.</p>
+
+    <h2>11. Schlussbestimmungen</h2>
+    <p>Es gilt österreichisches Recht unter Ausschluss der Verweisungsnormen und des UN-Kaufrechts. Zwingende Verbraucherschutzbestimmungen des Wohnsitzstaates des Nutzers bleiben unberührt. Sollte eine Bestimmung unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.</p>
+
+    <a class="back" href="index.html">← Zurück zur Startseite</a>
   </div>
-</header>
-<div class="wrap">
-  <h1>Nutzungsbedingungen</h1>
-  <p class="stand">Stand: Juni 2026</p>
-  <p>Diese Nutzungsbedingungen regeln die Nutzung der mobilen App <strong>PrüfDex</strong> (nachfolgend „App") zur Dokumentation von Prüfungen elektrischer Betriebsmittel nach DGUV Vorschrift 3 / VDE 0701-0702.</p>
-
-  <h2>1. Geltungsbereich</h2>
-  <p>Diese Bedingungen gelten zwischen dem Anbieter der App und der Person oder dem Betrieb, der die App nutzt („Nutzer"). Mit der Nutzung der App erkennt der Nutzer diese Bedingungen an.</p>
-
-  <h2>2. Leistungsbeschreibung</h2>
-  <p>Die App ist ein digitales Hilfsmittel zur Erfassung, Verwaltung und Dokumentation von Geräten, Prüfungen, Messwerten und Fristen sowie zur Erstellung von Prüfprotokollen und Prüfplaketten.</p>
-  <p><strong>Wichtig:</strong> Die App stellt keine Rechts-, Sicherheits- oder Sachverständigenberatung dar. Die fachgerechte Durchführung und Bewertung der Prüfung sowie die Einhaltung aller gesetzlichen und normativen Vorgaben obliegt allein der verantwortlichen Elektrofachkraft. Die App ersetzt nicht die erforderliche Qualifikation, Mess- und Prüftechnik oder fachliche Beurteilung.</p>
-
-  <h2>3. Konto und Registrierung</h2>
-  <p>Für die Cloud-Funktionen ist ein Konto erforderlich. Der Nutzer ist für die Geheimhaltung seiner Zugangsdaten sowie für die Richtigkeit der von ihm eingegebenen Daten verantwortlich.</p>
-
-  <h2>4. Pflichten des Nutzers</h2>
-  <ul>
-    <li>Die App ist bestimmungsgemäß und im Rahmen der geltenden Gesetze zu nutzen.</li>
-    <li>Der Nutzer stellt sicher, dass er zur Verarbeitung der von ihm eingegebenen Daten (z. B. Kundendaten) berechtigt ist.</li>
-    <li>Eine missbräuchliche Nutzung, Manipulation oder Beeinträchtigung der App ist untersagt.</li>
-  </ul>
-
-  <h2>5. Kosten</h2>
-  <p>Die App ist in ihrem Grundumfang kostenlos nutzbar. Kostenpflichtige Zusatzfunktionen können künftig angeboten und ausschließlich über die Bezahlfunktion des jeweiligen App-Stores abgewickelt werden. Auf etwaige Kosten wird vor Abschluss deutlich hingewiesen.</p>
-
-  <h2>6. Verfügbarkeit</h2>
-  <p>Der Anbieter bemüht sich um eine hohe Verfügbarkeit der App, übernimmt jedoch keine Gewähr für eine ununterbrochene Erreichbarkeit. Wartungsarbeiten, Störungen oder höhere Gewalt können die Nutzung vorübergehend einschränken.</p>
-
-  <h2>7. Haftung</h2>
-  <p>Der Anbieter haftet unbeschränkt bei Vorsatz und grober Fahrlässigkeit sowie bei der Verletzung von Leben, Körper oder Gesundheit. Bei leicht fahrlässiger Verletzung wesentlicher Vertragspflichten (Kardinalpflichten) ist die Haftung auf den vorhersehbaren, vertragstypischen Schaden begrenzt. Im Übrigen ist die Haftung ausgeschlossen.</p>
-  <p>Insbesondere übernimmt der Anbieter keine Haftung für die inhaltliche Richtigkeit, Vollständigkeit oder rechtliche Wirksamkeit der vom Nutzer erstellten Prüfprotokolle oder für Folgen einer unsachgemäßen Prüfung. Der Nutzer ist für regelmäßige Sicherungen seiner Daten selbst verantwortlich.</p>
-
-  <h2>8. Datenschutz</h2>
-  <p>Informationen zur Verarbeitung personenbezogener Daten finden Sie in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
-
-  <h2>9. Laufzeit und Löschung</h2>
-  <p>Der Nutzer kann die Nutzung jederzeit beenden und die Löschung seines Kontos beantragen. Einzelheiten finden Sie unter <a href="konto-loeschung.html">Konto &amp; Daten löschen</a>.</p>
-
-  <h2>10. Änderungen der Bedingungen</h2>
-  <p>Der Anbieter kann diese Bedingungen anpassen, soweit dies sachlich gerechtfertigt ist. Es gilt die jeweils auf dieser Seite veröffentlichte Fassung.</p>
-
-  <h2>11. Schlussbestimmungen</h2>
-  <p>Es gilt das Recht der Bundesrepublik Deutschland. Sollte eine Bestimmung unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.</p>
-
-  <div class="nav">
-    <a href="index.html">← Übersicht</a>
-    <a href="datenschutz.html">Datenschutzerklärung →</a>
-  </div>
-  <footer>PrüfDex · Stand: Juni 2026 · Kontakt: <a href="mailto:alexpfalz.installateurpfalz@gmail.com">alexpfalz.installateurpfalz@gmail.com</a></footer>
-</div>
 </body>
 </html>
